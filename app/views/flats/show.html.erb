@@ -1,10 +1,12 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
 
-<%= render @flat %>
+  <%= render @flat %>
 
-<div>
-  <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
-  <%= link_to "Back to flats", flats_path %>
+  <div>
+    <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
+    <%= link_to "Back to flats", flats_path %>
 
-  <%= button_to "Destroy this flat", @flat, method: :delete %>
+    <%= button_to "Destroy this flat", @flat, method: :delete %>
+  </div>
 </div>

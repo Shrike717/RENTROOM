@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
+<div class="container">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Bookings</h1>
+  <h1>Bookings</h1>
 
-<div id="bookings">
-  <% @bookings.each do |booking| %>
-    <%= render booking %>
-    <p>
-      <%= link_to "Show this booking", booking %>
-    </p>
-  <% end %>
+  <div id="bookings">
+    <% @bookings.each do |booking| %>
+      <%= render booking %>
+      <p>
+        <%= link_to "Show this booking", booking %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New booking", new_booking_path %>
 </div>
-
-<%= link_to "New booking", new_booking_path %>
