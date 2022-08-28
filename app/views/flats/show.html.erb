@@ -5,6 +5,8 @@
 
   <div>
     <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
+    <%= link_to "New booking", new_booking_path %> | <!-- This should not be A new booking! It should be the booking of THIS flat! -->
+    <%= link_to "New review", new_review_path %> | <!-- This should not be A new review! It should be a review for THIS flat! -->
     <%= link_to "Back to flats", flats_path %>
 
     <%= button_to "Destroy this flat", @flat, method: :delete %>
